@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+input {
+    outline: none;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.container_title__text {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container_inputs {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.container_inputs_input {
+    width: 615px;
+    height: 43px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px #D0D0D0;
+    color: #000;
+    display: block;
+    margin: 0 auto 40px auto;
+}
+
+.container_inputs_input[type="text"] {
+    padding-left: 30px;
+}
+
+.container_check {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container_chek_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.container_chek_checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.container_chek_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #CCCCCC;
+    border-radius: 12px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.container_chek_checkbox:checked+label::before {
+    border-color: #000;
+    background-color: #000;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.container_check__text {
+    margin: auto 0 auto 30px;
+}
+
+.container_button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container_button__btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background: #FFA300;
+    color: #fff;
+    width: 200px;
+    height: 53px;
+    transition: all 500ms;
+}
+
+.container_button__btn:hover {
+    transition: all 500ms;
+    background: #FFBD48;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
