@@ -3,11 +3,20 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    letter-spacing: 5%;
+}
+
+input {
+    outline:none;
 }
 
 p {
     font-size: 16px;
+    letter-spacing: 5%;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    letter-spacing: 5%;
 }
 
 a {
@@ -78,6 +87,17 @@ li {
 .header-titile_p {
     margin: 0 0 40px 0;
     line-height: 1.5em;
+    font-weight: normal;
+}
+
+.select {
+    padding-left: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url('../img/Низ.png') no-repeat;
+    background-position: 95% 50%;
 }
 
 .orange {
@@ -90,11 +110,13 @@ li {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
+    transition: all 300ms;
 }
 
 .orange:hover {
     transition: all 300ms;
     background: rgb(190, 121, 0);
+    cursor: pointer;
 }
 
 .grey {
@@ -113,6 +135,7 @@ li {
 .grey:hover {
     transition: all 300ms;
     background: #505050;
+    cursor: pointer;
 }
 
 .header-title_bottons {
@@ -123,14 +146,331 @@ li {
     padding-bottom: 210px;
 }
 
-@font-face {
+.about-us {
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.h2__text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.about-us_photo-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.about-us_photo-block__text {
+    margin: 0;
+    width: 547px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.solved-issues__text {
+    padding-bottom: 50px;
+}
+
+
+/* Слайдер */
+
+.swiper-slide {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.swiper-button-prev {
+    color: black;
+}
+
+.swiper-button-next {
+    color: black;
+}
+
+
+.solved-issues-slider__text {
+    max-width: 879px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.solved-issues {
+    padding-bottom: 100px;
+}
+
+.block-form__text {
+    padding-bottom: 50px;
+}
+
+.form_wrapper {
+    max-width: 881px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px #D0D0D0;
+    border-radius: 30px;
+}
+
+.form-container {
+    max-width: 781px;
+    margin: 0 auto;
+}
+
+.name-and-catergory {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+
+.name-and-catergory__name {
+    width: 330px;
+    height: 34px;
+    border-radius: 12px;
     font-family: 'Montserrat', sans-serif;
-    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px #D0D0D0;
+    color: #000;
+}
+
+.name-and-catergory__name[type="text"] {
+    padding-left: 30px;
+}
+
+.name-and-catergory__name:focus {
+    outline: auto;
+    outline-color: #D0D0D0;
+    box-shadow: none;
+    outline-width: 1px;
+}
+
+.form_description {
+    margin-top: 40px;
+}
+
+.form_description__input {
+    width: 721px;
+    height: 138px;
+    overflow: hidden;
+    resize: none;
+}
+
+.form_description__input[type="text"] {
+    padding-right: 30px;
+}
+
+.form_buttom {
+    text-align: right;
+    padding: 40px 0;
+}
+
+.form__btn {
+    color: rgb(255, 255, 255);
+    background: #FFA300;
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.form__btn:hover {
+    transition: all 300ms;
+    background: rgb(190, 121, 0);
+    cursor: pointer;
+}
+
+.block-form_form {
+    padding-bottom: 100px;
+}
+
+.form-photo {
+    margin-top: 40px;
+}
+
+.form-photo {
+    width: 781px;
+    height: 297px;
+    box-shadow: 0 4px 8px #D0D0D0;
+    border-radius: 12px;
+    background-image: url("../img/Икона-картинки.svg");   
+    background-repeat: no-repeat;   
+    background-position: 50% 30%;  
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.form__input[type="file"] {
+    opacity: 0;
+    margin-top: 20%;
+}
+
+.label__span {
+    color: #8B8B8B;
+    transition: all 200ms;
+}
+
+.label__span:hover {
+    transition: all 200ms;
+    color: #FFA300;
+    cursor: pointer;
+}
+
+.label__span:focus {
+    transition: all 200ms;
+    color: #FFA300;
+}
+
+.questions__text {
+    padding-bottom: 50px;
+}
+
+.text {
+    margin-bottom: 30px;
+    font-weight: normal;
+    transition: all 300ms;
+}
+
+.text:hover {
+    transition: all 300ms;
+    color: #FFA300;
+    cursor: pointer;
+}
+
+.questions-hr {
+    width: 100%;
+    size: 1px;
+    margin: 0 0 35px 0;
+    color: rgb(73, 73, 73);
+}
+
+.end {
+    margin: 0 0 0 0;
+}
+
+.questions {
+    padding-bottom: 100px;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+}
+
+.footer-block_container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_sociable {
+    text-align: center;
+}
+
+.footer__logo {
+    margin-bottom: 30px;
+}
+
+.footer_sociable__logo-socia {
+    width: 221px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vk {
+    width: 24px;
+    height: 14px;
+}
+
+.telegram {
+    width: 20.02px;
+    height: 16.79px;
+}
+
+.ds {
+    width: 24px;
+    height: 18px;
+}
+
+.ints {
+    width: 22px;
+    height: 22px;
+}
+
+.facebook {
+    width: 10.69px;
+    height: 22px;
+}
+
+.information {
+    display: block;
+    color: #fff;
+    line-height: 2.5em;
     font-weight: normal;
 }
 
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(../fonts/Montserrat-Bold.ttf);
-    font-weight: bold;
+.information:hover {
+    transition: all 300ms;
+    color: rgb(100, 100, 100);
 }
+
+.information:nth-child(1) {
+    margin: 0;
+    font-weight: 600;
+    transition: none;
+}
+
+.information:nth-child(1):hover {
+    color: #fff;
+}
+
+.footer_contacts {
+    text-align: right;
+}
+
+.footer_contacts__it-contact {
+    font-size: 24px;
+}
+
+.footer_contacts__number {
+    margin: 20px 0;
+}
+
+.footer-block_politick {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer__line {
+    border: 1px solid rgb(100, 100, 100);
+    width: 100%;
+    margin: 31px 0;
+}
+
+.rights {
+    color: #fff;
+}
+
+.politics {
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); 
+    font-style: bold; 
+    font-weight: bold; 
+} 

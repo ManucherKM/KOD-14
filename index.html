@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style_landing.css">
     <title>Landing</title>
 </head>
@@ -13,9 +14,8 @@
     <div class="header">
         <div class="header_fon">
             <div class="container">
-
                 <nav class="header_nav">
-                    <img src="./img/Логотип.png" alt="Logo" class="header_nav__logo">
+                    <a href="#" class="home"><img src="./img/Логотип.png" alt="Logo" class="header_nav__logo"></a>
                     <ul class="nav-list">
                         <li class="nav-list__elment">
                             <a href="./reg.html" class="nav-list__elment__link">Регистрация</a>
@@ -25,11 +25,12 @@
                         </li>
                     </ul>
                 </nav>
-
                 <div class="header-title">
                     <h1 class="header-title__h1">Сделаем лучше вместе!</h1>
-                    <p class="header-titile_p">Прием заявок по устранение проблем в городе: ямочный ремонт дорог, ремонт детских
-                        <br>площадок, зданий, сооружений и др.</p>
+                    <p class="header-titile_p">Прием заявок по устранение проблем в городе: ямочный ремонт дорог, ремонт
+                        детских
+                        <br>площадок, зданий, сооружений и др.
+                    </p>
                     <div class="header-title_bottons">
                         <button class="orange">Подать заявку</button>
                         <button class="grey">Мои заявки</button>
@@ -37,8 +38,179 @@
                 </div>
             </div>
         </div>
-
     </div>
-</body>
 
-</html>
+    <div class="about-us">
+        <div class="container">
+            <h2 class="about-us__h2-text h2__text">
+                О нас
+            </h2>
+            <div class="about-us_photo-block">
+                <p class="about-us_photo-block__text">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
+                    менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных
+                    выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
+                    универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений
+                    в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+                    восприятия.
+                </p>
+                <img src="./img/Команда.png" alt="Photo" class="about-us_photo-block__photo">
+            </div>
+        </div>
+    </div>
+
+    <div class="solved-issues">
+        <div class="container">
+            <h2 class="solved-issues__text h2__text">
+                Решенные проблемы
+            </h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/Фото места с проблемой.png" alt="Photo"></div>
+                    <div class="swiper-slide"><img src="./img/Фото места с проблемой.png" alt="Photo"></div>
+                    <div class="swiper-slide"><img src="./img/Фото места с проблемой.png" alt="Photo"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <p class="solved-issues-slider__text">
+                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+                осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в
+                домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.<br>
+                <br>
+
+                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+                осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в
+                домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+            </p>
+        </div>
+    </div>
+
+    <div class="block-form">
+        <div class="container">
+            <h2 class="block-form__text h2__text">
+                Заявка
+            </h2>
+            <section class="block-form_form">
+                <div class="form_wrapper">
+                    <form action="#" name="newform" method="post" class="form-container">
+                        <div class="form_inputs">
+                            <div class="name-and-catergory">
+                                <input type="text" class="name-and-catergory__name" placeholder="Название" required>
+                                <select name="select" size="1" class="name-and-catergory__name select">
+                                    <option selected value="s1">Дорога</option>
+                                    <option value="s2">Площадка</option>
+                                    <option value="s3">Дом</option>
+                                </select>
+                            </div>
+                            <div class="form_description">
+                                <textarea type="text" class="name-and-catergory__name form_description__input"
+                                    placeholder="Описание заявки" required></textarea>
+                            </div>
+                            <div class="form-photo">
+                                <label class="label"><input type="file" class="form__input" multiple><br><span
+                                        class="label__span">Добавить фотографию</span></label>
+                            </div>
+                            <div class="form_buttom">
+                                <button class="form__btn">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="questions">
+        <div class="container">
+            <h2 class="questions__text h2__text">
+                Часть задаваемые вопросы
+            </h2>
+            <div class="questions_block">
+                <p class="text">
+                    Зачем нужен этот веб-сайт ?
+                </p>
+                <hr noshade class="questions-hr">
+            </div>
+            <div class="questions_block">
+                <p class="text">
+                    Как происходит прием, обработка поданных заявок ?
+                </p>
+                <hr noshade class="questions-hr">
+            </div>
+            <div class="questions_block">
+                <p class="text">
+                    Какая нам от этого выгода ?
+                </p>
+                <hr noshade class="questions-hr">
+            </div>
+            <div class="questions_block">
+                <p class="text">
+                    Как подать заявку ?
+                </p>
+                <hr noshade class="questions-hr">
+            </div>
+            <div class="questions_block">
+                <p class="text">
+                    Как можно связаться с нами помимо сайта ?
+                </p>
+                <hr noshade class="questions-hr end">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-block_container">
+                <div class="footer_sociable">
+                    <a href="#" class="home"><img src="./img/Логотип(футер).png" alt="Photo" class="footer__logo"></a>
+                    <div class="footer_sociable__logo-socia">
+                        <a href="#"><img src="./img/VK.png" alt="Photo" class="char vk"></a>
+                        <a href="#"><img src="./img/Telegramm .png" alt="Photo" class="char telegram"></a>
+                        <a href="#"><img src="./img/DS.png" alt="Photo" class="char ds"></a>
+                        <a href="#"><img src="./img/Insta.png" alt="Photo" class="char ints"></a>
+                        <a href="#"><img src="./img/Facebook.png" alt="Photo" class="char facebook"></a>
+                    </div>
+                </div>
+
+                <div class="footer-list">
+                    <p class="information">Информация</p>
+                    <a href="#" class="information">О компании</a>
+                    <a href="#" class="information">Партнерам</a>
+                    <a href="#" class="information">Отзывы</a>
+                </div>
+
+                <div class="footer-list">
+                    <p class="information">Сотрудничество</p>
+                    <a href="#" class="information">Вакансии</a>
+                    <a href="#" class="information">Спонсорство</a>
+                    <a href="#" class="information">Сообщить о проблеме</a>
+                </div>
+
+                <div class="footer_contacts">
+                    <p class="footer_contacts__it-contact">
+                        Контакты:
+                    </p>
+                    <p class="footer_contacts__number">
+                        +1 (324) 234 56-78
+                    </p>
+                    <p class="footer_contacts__e-mail">
+                        admin123@mail.ru
+                    </p>
+                </div>
+            </div>
+            <hr class="footer__line">
+            <div class="footer-block_politick">
+                <a href="#" class="rights">©Все права защищены</a>
+                <a href="#" class="politics">Политика конфиденциальности </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>

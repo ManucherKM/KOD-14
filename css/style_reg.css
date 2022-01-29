@@ -73,6 +73,10 @@ input {
     user-select: none;
 }
 
+.container_chek_checkbox+label:hover {
+    cursor: pointer;
+}
+
 .container_chek_checkbox+label::before {
     content: '';
     display: inline-block;
@@ -119,16 +123,20 @@ input {
 .container_button__btn:hover {
     transition: all 500ms;
     background: #FFBD48;
+    cursor: pointer;
 }
 
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(../fonts/Montserrat-Regular.ttf);
-    font-weight: normal;
-}
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(../fonts/Montserrat-Bold.ttf);
-    font-weight: bold;
-}
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); 
+    font-style: bold; 
+    font-weight: bold; 
+} 
