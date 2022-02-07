@@ -55,6 +55,10 @@ input {
     padding-left: 30px;
 }
 
+.container_inputs_input[type="password"] {
+    padding-left: 30px;
+}
+
 .container_button {
     margin-top: 40px;
     text-align: center;
