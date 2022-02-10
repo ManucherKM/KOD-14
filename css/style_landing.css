@@ -496,7 +496,7 @@ li {
 }
 
 .accordion {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .form_description__input {
@@ -631,13 +631,43 @@ li {
         padding-bottom: 50px;
     }
 
+    .footer-block_container {
+        display: block;
+    }
+
+    .footer_sociable__logo-socia {
+        margin: 0 auto;
+    }
+
     .footer_block-adapt {
-        width: 100%;
-        order: -1;
+        width: 600px;
+        margin: 0 auto;
     }
 
-    .footer_sociable {
-        width: 100%;
+    .footer-list:nth-child(2) {
+        text-align: right;
     }
 
+    .footer_contacts {
+        display: flex;
+        width: 600px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .footer_contacts p {
+        margin: auto 0;
+    }
+
+    .footer-block_politick {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .footer__line {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
